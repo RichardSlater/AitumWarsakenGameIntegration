@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Warsaken Aitum Helper",
+  "description": "Integration between Warsaken game and Aitum Streaming Software",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://warsaken.cards/battle/*"
+      ]
+    }
+  ]
+}
